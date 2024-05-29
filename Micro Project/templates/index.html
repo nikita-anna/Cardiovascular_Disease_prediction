@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardiovascular Disease Prediction</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cardiovascular Disease Prediction</h1>
+        <form action="/predict" method="post">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br><br>
+            
+            <label for="height">Height (cm):</label>
+            <input type="number" id="height" name="height" required><br><br>
+            
+            <label for="weight">Weight (kg):</label>
+            <input type="number" id="weight" name="weight" required><br><br>
+            
+            <label for="ap_hi">Systolic blood pressure:</label>
+            <input type="number" id="ap_hi" name="ap_hi" required><br><br>
+            
+            <label for="ap_lo">Diastolic blood pressure:</label>
+            <input type="number" id="ap_lo" name="ap_lo" required><br><br>
+            
+            <label for="cholesterol">Cholesterol(1: normal, 2: above normal, 3: well above normal):</label>
+            <input type="number" id="cholesterol" name="cholesterol" required><br><br>
+            
+            <label for="gluc">Glucose(1: normal, 2: above normal, 3: well above normal):</label>
+            <input type="number" id="gluc" name="gluc" required><br><br>
+            
+            <label for="smoke">Smoking(1: yes, 0: no):</label>
+            <input type="number" id="smoke" name="smoke" required><br><br>
+            
+            <label for="alco">Alcohol intake(1: yes, 0: no):</label>
+            <input type="number" id="alco" name="alco" required><br><br>
+            
+            <label for="active">Physical activity(1: yes, 0: no):</label>
+            <input type="number" id="active" name="active" required><br><br>
+            
+            <button type="submit">Predict</button>
+        </form>
+    </div>
+</body>
+</html>
